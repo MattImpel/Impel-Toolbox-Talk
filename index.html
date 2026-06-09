@@ -305,12 +305,12 @@
         }
 
         .attendee-row.signed .signature-box {
-            max-height: 60px;
+            max-height: 30px;
             overflow: hidden;
         }
 
         .attendee-row.signed canvas {
-            height: 60px !important;
+            height: 30px !important;
             opacity: 0.6;
         }
 
@@ -373,6 +373,40 @@
             .btn-secondary,
             .btn-primary {
                 display: none !important;
+            }
+            header {
+                border-bottom: 3px solid #003366;
+                padding-bottom: 15px;
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                page-break-after: avoid;
+            }
+            header h1 {
+                font-size: 32px;
+                color: #003366;
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+            header > div:first-child p {
+                display: none;
+            }
+            header > div:last-child {
+                text-align: right;
+            }
+            header > div:last-child > div:first-child {
+                font-size: 28px;
+                color: #ff8c00;
+                font-weight: bold;
+                margin: 0;
+                line-height: 1;
+            }
+            header > div:last-child > div:last-child {
+                font-size: 12px;
+                color: #666;
+                margin-top: 2px;
             }
         }
 
